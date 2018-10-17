@@ -1,0 +1,194 @@
+body {
+  background-color: black;
+
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionLeft{
+
+  width: 50%;
+  position: relative;
+
+}
+
+.sectionRight{
+
+  width: 50%;
+    position: relative;
+
+}
+
+.colorArea {
+
+  float: left;
+  width: 550px;
+  height: 550px;
+  border: 5px solid black;
+}
+
+.colorSection{
+  float: right;
+  margin: auto;
+   width: 60%;
+   padding: 10px;
+}
+
+
+.green {
+    background-color:green;
+
+}
+
+.green-flash {
+  background-color: darkgreen ;
+}
+
+.red {
+  background-color: red;
+
+}
+
+.red-flash {
+  background-color: darkred ;
+}
+
+.yellow {
+  background-color: yellow;
+
+}
+
+.yellow-flash {
+  background-color: #e6d47e;
+}
+
+.blue {
+  background-color: blue;
+
+}
+
+.blue-flash {
+  background-color: darkblue;
+}
+
+.purple{
+  background-color: purple;
+
+}
+
+.purple-flash {
+  background-color: #250517 ;
+}
+
+.pink{
+  background-color: pink;
+
+}
+
+.pink-flash {
+  background-color: #F5AE69;
+}
+
+.grey{
+  background-color: grey;
+
+}
+
+.grey-flash {
+  background-color: #2F4F4F;
+}
+
+.white{
+  background-color: white;
+
+}
+
+.white-flash {
+  background-color: #949FD3 ;
+}
+
+.controlButtons {
+  border: 15px solid black;
+  border-radius: 500px;
+  width: 200px;
+  height: 200px;
+
+}
+
+
+
+.levelBoard {
+  border-radius: 10px;
+  color: black;
+  width: 300px;
+  height: 200px;
+  font-size: 40px;
+  background-color: #AD6B6B;
+  font-size: 50px;
+  font-family: fantasy;
+}
+
+.start, .restart {
+  margin-left: 20px;
+  border: solid 3px black;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  color: black;
+  line-height: 55px;
+  font-size: 80px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+}
+
+#h_p {
+  margin-left: 20px;
+  border: solid 3px black;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  color: black;
+  line-height: 55px;
+  font-size: 80px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+}
+#index{
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  color: black;
+  line-height: 55px;
+  font-size: 40px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+
+  .instruction{
+
+      color: white;
+      
+      font-size: 200px;
+      font-family: fantasy;
+
+
+
+
+
+  }
+
+
+
+
+.header{
+  font-size: 100px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+  color: black;
+}
