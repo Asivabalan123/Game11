@@ -1,7 +1,7 @@
 //variables
 playerClicks = [];
 computerClicks = [];
-const levels = 4;
+const levels = 5;
 var id, color, level = 0;
 var restart = false;
 var error = false;
@@ -44,6 +44,7 @@ function playerClicksequence() {
   playerClicks.push(id);
     console.log(id+" "+color);
     addtempFlashClass(id, color);
+
     //check user sequence
     if(!checkplayerClicks()) {
       //if playing restart mode reset everything
@@ -55,9 +56,6 @@ function playerClicksequence() {
       error = true;
       levelBoardError();
       resetGame();
-
-
-
     }
     //checking end of sequence
     else if(playerClicks.length == computerClicks.length && playerClicks.length < levels) {
@@ -75,7 +73,7 @@ function playerClicksequence() {
 
 }
 
-/* computer click sequence */
+// computer click sequence //
 function computerClicksequence() {
   console.log("level "+level);
   $(".levelBoard").text(level);
@@ -134,11 +132,11 @@ function checkplayerClicks() {
 function levelBoardError() {
   var levelCount = 0;
   var myError = setInterval(function() {
+    var audio = new Audio('Audio/end.mp3');
+    audio.play();
     $(".levelBoard").text("X");
     levelCount++;
-    if(levelCount == 4) {
-      var audio = new Audio('Audio/end.mp3');
-      audio.play();
+    if(levelCount == 5) {
       $(".levelBoard").text(level);
       clearInterval(myError);
       playerClicks = [];
@@ -149,13 +147,14 @@ function levelBoardError() {
 
 //levelBoard displays winner
 function levelBoardWinner() {
+
 var levelCount = 0;
   var winInterval = setInterval(function() {
+    var audio = new Audio('Audio/win.mp3');
+    audio.play();
     $(".levelBoard").text("Win");
     levelCount++;
-    if(levelCount == 4) {
-      var audio = new Audio('Audio/win.mp3');
-      audio.play();
+    if(levelCount == 5) {
       clearInterval(winInterval);
       $(".levelBoard").text("level");
       resetGame();
@@ -164,7 +163,6 @@ var levelCount = 0;
   }, 500);
 
 }
-
 
 // resetting the game
 function resetGame() {
