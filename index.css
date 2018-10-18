@@ -6,12 +6,14 @@ body {
 .container {
   margin: 0 auto;
   text-align: center;
+
 }
 
 .sectionLeft{
 
   width: 50%;
   position: relative;
+  margin-right: 40%;
 
 }
 
@@ -28,6 +30,9 @@ body {
   width: 550px;
   height: 550px;
   border: 5px solid black;
+  margin-right: 5px;
+  padding-right: 40px;
+
 }
 
 .colorSection{
@@ -37,27 +42,26 @@ body {
    padding: 10px;
 }
 
-
 .green {
-    background-color:green;
+    background-color:lightgreen;
 
 }
 
 .green-flash {
-  background-color: darkgreen ;
+  background-color: green;
 }
 
 .red {
-  background-color: red;
+  background-color:#FA8072;
 
 }
 
 .red-flash {
-  background-color: darkred ;
+  background-color: red ;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #FFFF99;
 
 }
 
@@ -66,16 +70,16 @@ body {
 }
 
 .blue {
-  background-color: blue;
+  background-color: lightblue;
 
 }
 
 .blue-flash {
-  background-color: darkblue;
+  background-color: blue;
 }
 
 .purple{
-  background-color: purple;
+  background-color: #AD6B6B;
 
 }
 
@@ -84,16 +88,16 @@ body {
 }
 
 .pink{
-  background-color: pink;
+  background-color: #FF69B4;
 
 }
 
 .pink-flash {
-  background-color: #F5AE69;
+  background-color: #FF1493;
 }
 
 .grey{
-  background-color: grey;
+  background-color: lightpink;
 
 }
 
@@ -102,7 +106,7 @@ body {
 }
 
 .white{
-  background-color: white;
+  background-color: #EAB685;
 
 }
 
@@ -110,25 +114,35 @@ body {
   background-color: #949FD3 ;
 }
 
+.orange{
+  background-color: #A5A098;
+
+}
+
+.orange-flash {
+  background-color: #FF8C00  ;
+}
+
 .controlButtons {
   border: 15px solid black;
   border-radius: 500px;
   width: 200px;
   height: 200px;
+  margin-left: 20px;
 
 }
 
-
-
 .levelBoard {
-  border-radius: 10px;
+  margin-left: 1500px;
+  border-radius: 30px;
   color: black;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   font-size: 40px;
   background-color: #AD6B6B;
-  font-size: 50px;
+  font-size: 200px;
   font-family: fantasy;
+
 }
 
 .start, .restart {
@@ -138,7 +152,6 @@ body {
   height: 200px;
   border-radius: 30px;
   color: black;
-  line-height: 55px;
   font-size: 80px;
   font-family: fantasy;
   background-color: #AD6B6B;
@@ -169,21 +182,14 @@ margin-right: auto;
   font-size: 40px;
   font-family: fantasy;
   background-color: #AD6B6B;
+}
 
   .instruction{
-
       color: white;
-      
-      font-size: 200px;
-      font-family: fantasy;
-
-
-
-
-
+      text-align: center;
+      font-size: 30px;
+      font-family: serif;
   }
-
-
 
 
 .header{
@@ -191,4 +197,5 @@ margin-right: auto;
   font-family: fantasy;
   background-color: #AD6B6B;
   color: black;
+  margin left: 60%;
 }

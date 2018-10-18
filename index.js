@@ -1,7 +1,5 @@
 //variables
-//stores users sequence of clicks
 playerClicks = [];
-//stores computer sequence of colors
 computerClicks = [];
 const levels = 6;
 var id, color, level = 0;
@@ -10,8 +8,8 @@ var error = false;
 
 // start color sequence
 $(document).ready(function() {
-  $(".levelBoard").text("");
   $(".start").click(function() {
+      $(".levelBoard").text("");
     restart = false;
     error = false;
     level = 0;
@@ -54,8 +52,10 @@ function playerClicksequence() {
       }
       error = true;
       levelBoardError();
-      playerClicks = [];
-      computerClicksequence();
+      resetGame();
+
+
+
     }
     //checking end of sequence
     else if(playerClicks.length == computerClicks.length && playerClicks.length < levels) {
@@ -100,18 +100,18 @@ function computerClicksequence() {
     if(i == computerClicks.length) {
       clearInterval(myInterval);
     }
-  }, 2000);
+  }, 1000);
 }
 
 //generate random number
 
 function getRandomNum() {
-  var random = Math.floor(Math.random() *8);
+  var random = Math.floor(Math.random() *9);
   //push random number into computer clicks array
   computerClicks.push(random);
 }
 
-/* add temporary class */
+// add temporary class
 function addtempFlashClass(id, color) {
   $("#"+id).addClass(color+"-flash");
   setTimeout(function(){
@@ -119,7 +119,7 @@ function addtempFlashClass(id, color) {
   }, 500);
 }
 
-/* checking player seq against computers */
+// checking player seq against computers
 function checkplayerClicks() {
   for(var i = 0; i < playerClicks.length; i++) {
     if(playerClicks[i] != computerClicks[i]) {
@@ -129,42 +129,41 @@ function checkplayerClicks() {
   return true;
 }
 
-/* levelBoard error  */
+// levelBoard displays error
 function levelBoardError() {
-  console.log("error");
-  var counter = 0;
+  var levelCount = 0;
   var myError = setInterval(function() {
-    $(".levelBoard").text("Err");
-    counter++;
-    if(counter == 4) {
+    $(".levelBoard").text("X");
+    levelCount++;
+    if(levelCount == 6) {
       $(".levelBoard").text(level);
       clearInterval(myError);
       playerClicks = [];
-      counter = 0;
+       levelCount = 0;
     }
-  }, 2000);
+  }, 300);
 }
 
-//levelBoard winner
+//levelBoard displays winner
 function levelBoardWinner() {
-  var count = 0;
+  var levelCount = 0;
   var winInterval = setInterval(function() {
-    count++;
+    levelCount++;
     $(".levelBoard").text("Win");
-    if(count == 6) {
+    if(levelCount == 6) {
       clearInterval(winInterval);
-      $(".levelBoard").text("0");
-      count = 0;
+      $(".levelBoard").text("level");
+      levelCount = 0;
     }
   }, 3000);
 }
 
-/* reset game */
+// resetting the game
 function resetGame() {
   playerClicks = [];
   computerClicks = [];
   level = 0;
-  $(".levelBoard").text("0");
+  $(".levelBoard").text("");
 
 }
 });
