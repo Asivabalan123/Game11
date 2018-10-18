@@ -7,6 +7,7 @@ body {
   margin: 0 auto;
   text-align: center;
 
+
 }
 
 .sectionLeft{
@@ -18,9 +19,8 @@ body {
 }
 
 .sectionRight{
-
   width: 50%;
-    position: relative;
+  position: relative;
 
 }
 
@@ -38,8 +38,8 @@ body {
 .colorSection{
   float: right;
   margin: auto;
-   width: 60%;
-   padding: 10px;
+  width: 60%;
+  padding: 10px;
 }
 
 .green {
@@ -130,6 +130,7 @@ body {
   height: 200px;
   margin-left: 20px;
 
+
 }
 
 .levelBoard {
@@ -148,7 +149,7 @@ body {
 .start, .restart {
   margin-left: 20px;
   border: solid 3px black;
-  width: 300px;
+  width: 400px;
   height: 200px;
   border-radius: 30px;
   color: black;
@@ -160,7 +161,7 @@ body {
 #h_p {
   margin-left: 20px;
   border: solid 3px black;
-  width: 300px;
+  width: 400px;
   height: 200px;
   border-radius: 30px;
   color: black;
@@ -168,6 +169,7 @@ body {
   font-size: 80px;
   font-family: fantasy;
   background-color: #AD6B6B;
+
 }
 #index{
 

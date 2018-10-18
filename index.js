@@ -1,7 +1,7 @@
 //variables
 playerClicks = [];
 computerClicks = [];
-const levels = 6;
+const levels = 4;
 var id, color, level = 0;
 var restart = false;
 var error = false;
@@ -39,6 +39,8 @@ $(document).ready(function() {
 
 //user sequence
 function playerClicksequence() {
+  var audio = new Audio('Audio/colors.mp3')
+  audio.play();
   playerClicks.push(id);
     console.log(id+" "+color);
     addtempFlashClass(id, color);
@@ -80,9 +82,6 @@ function computerClicksequence() {
   if(!error) {
     getRandomNum();
   }
-  if(error && restart) {
-    getRandomNum();
-  }
   var i = 0;
   var myInterval = setInterval(function() {
 // adding the flash color change by using the Id for the specific color area.
@@ -117,6 +116,8 @@ function addtempFlashClass(id, color) {
   setTimeout(function(){
     $("#"+id).removeClass(color+"-flash");
   }, 500);
+  var audio = new Audio('Audio/compclick.mp3');
+    audio.play();
 }
 
 // checking player seq against computers
@@ -135,7 +136,9 @@ function levelBoardError() {
   var myError = setInterval(function() {
     $(".levelBoard").text("X");
     levelCount++;
-    if(levelCount == 6) {
+    if(levelCount == 4) {
+      var audio = new Audio('Audio/end.mp3');
+      audio.play();
       $(".levelBoard").text(level);
       clearInterval(myError);
       playerClicks = [];
@@ -146,17 +149,22 @@ function levelBoardError() {
 
 //levelBoard displays winner
 function levelBoardWinner() {
-  var levelCount = 0;
+var levelCount = 0;
   var winInterval = setInterval(function() {
-    levelCount++;
     $(".levelBoard").text("Win");
-    if(levelCount == 6) {
+    levelCount++;
+    if(levelCount == 4) {
+      var audio = new Audio('Audio/win.mp3');
+      audio.play();
       clearInterval(winInterval);
       $(".levelBoard").text("level");
+      resetGame();
       levelCount = 0;
     }
-  }, 3000);
+  }, 500);
+
 }
+
 
 // resetting the game
 function resetGame() {
