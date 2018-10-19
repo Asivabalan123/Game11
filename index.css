@@ -157,6 +157,7 @@ body {
   font-size: 100px;
   font-family: fantasy;
   background-color: #AD6B6B;
+  cursor: pointer;
 }
 
 #h_p {
@@ -170,6 +171,7 @@ body {
   font-size: 100px;
   font-family: fantasy;
   background-color: #AD6B6B;
+  cursor: pointer;
 
 }
 #index{
@@ -194,7 +196,8 @@ body {
       font-family: serif;
       margin-left: 34%;
       margin-right:34%;
-      
+      cursor: pointer;
+
   }
 
 
