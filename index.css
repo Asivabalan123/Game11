@@ -1,0 +1,211 @@
+body {
+  background-color: black;
+
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+.sectionLeft{
+
+  width: 50%;
+  position: relative;
+  margin-right: 40%;
+
+}
+
+.sectionRight{
+  width: 50%;
+  position: relative;
+
+}
+
+.colorArea {
+
+  float: left;
+  width: 550px;
+  height: 550px;
+  border: 5px solid black;
+  margin-right: 5px;
+  padding-right: 40px;
+
+}
+
+.colorSection{
+  float: right;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.green {
+    background-color:lightgreen;
+
+}
+
+.green-flash {
+  background-color: green;
+}
+
+.red {
+  background-color:#FA8072;
+
+}
+
+.red-flash {
+  background-color: red;
+}
+
+.yellow {
+  background-color: #FFFF99;
+
+}
+
+.yellow-flash {
+  background-color: #e6d47e;
+}
+
+.blue {
+  background-color: lightblue;
+
+}
+
+.blue-flash {
+  background-color: blue;
+}
+
+.purple{
+  background-color: #AD6B6B;
+
+}
+
+.purple-flash {
+  background-color: #250517;
+}
+
+.pink{
+  background-color: #FF69B4;
+
+}
+
+.pink-flash {
+  background-color: #FF1493;
+}
+
+.grey{
+  background-color: lightpink;
+
+}
+
+.grey-flash {
+  background-color: #2F4F4F;
+}
+
+.white{
+  background-color: #EAB685;
+
+}
+
+.white-flash {
+  background-color: #949FD3;
+}
+
+.orange{
+  background-color: #A5A098;
+
+}
+
+.orange-flash {
+  background-color: #FF8C00;
+}
+
+.controlButtons {
+  border: 15px solid black;
+  border-radius: 500px;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+
+}
+
+.levelBoard {
+  margin-left: 1500px;
+  border-radius: 30px;
+  color: black;
+  line-height: 500px;
+  width: 500px;
+  height: 500px;
+  font-size: 40px;
+  background-color: #AD6B6B;
+  font-size: 200px;
+  font-family: fantasy;
+
+}
+
+.start, .restart {
+  margin-left: 20px;
+  border: solid 3px black;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  color: black;
+  line-height: 300px;
+  font-size: 100px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+  cursor: pointer;
+}
+
+#h_p {
+  margin-left: 20px;
+  border: solid 3px black;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  color: black;
+  line-height: 55px;
+  font-size: 100px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+  cursor: pointer;
+
+}
+#index{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  color: black;
+  line-height: 55px;
+  font-size: 40px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+}
+
+.instruction{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      font-family: serif;
+      margin-left: 34%;
+      margin-right:34%;
+      cursor: pointer;
+
+  }
+
+
+.header{
+  font-size: 100px;
+  font-family: fantasy;
+  background-color: #AD6B6B;
+  color: black;
+  margin left: 60%;
+
+}
